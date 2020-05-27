@@ -1,0 +1,67 @@
+h2.head {
+text-align:center;
+font-size:60px;
+text-shadow: 2px 2px 2px grey;
+font-family:'yozakuraregular';
+}
+.summary {
+padding:10px;
+margin:auto;
+font-size:22px;
+text-shadow: 1px 1px 1px grey;
+width:85%;
+margin-bottom:20px;
+}
+.pve, .pvp{
+text-align:center;
+font-size:60px;
+text-shadow: 2px 2px 2px grey;
+font-family:'yozakuraregular';
+}
+
+.combatdesc {
+padding:10px;
+margin:auto;
+font-size:22px;
+text-shadow: 2px 2px 2px silver;
+width:85%;
+}
+.combatpic {
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:70%;
+padding:25px;
+margin-top:20px;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+  border-radius:5px;
+  background-image: radial-gradient(red 1%, crimson 10%,#2729ae);
+  font-style:italic;
+  height:70px;
+}
+
+.tablink:hover {
+  background-color: #777;
+  background-image: radial-gradient(darkred 1%,red 10%,#1f208b);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  border-radius:30px;
+}
+#PvE {background-color:#76a3ff;}
+#PvP {background-color:#FFC6D0;}

@@ -1,0 +1,164 @@
+h2.head {
+    text-align:center;
+    font-size: 60px;
+text-shadow: 2px 2px 2px grey;
+font-family: 'yozakuraregular';
+  }
+#cont {
+color:black;
+bottom:30px;
+}
+p.about {
+    text-align:left;
+    font-size: 20px;
+    margin-left: 70px;
+    word-break: normal;
+    border:2px solid #b6b6b6;
+    background-color:#B0DFE5;
+text-shadow:1px 1px 1px grey;
+ border-radius: 15px;
+font-style:italic;
+  }
+p.about a{
+text-decoration:none;
+background:linear-gradient(to right, rgba(230,175,151,1) 39%,rgba(215,128,237,1) 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent;
+
+}
+p.about2 {
+    text-align:left;
+    font-size: 20px;
+    margin-right: 70px;
+    word-break: normal;
+    border:2px solid #b6b6b6;
+    background-color:#B0DFE5;
+text-shadow:1px 1px 1px grey;
+ border-radius: 15px;
+font-style:italic;
+  }
+p.about3 {
+    text-align:left;
+    font-size: 20px;
+    margin:auto;
+    word-break: normal;
+    width: 90%;
+    border:2px solid #b6b6b6;
+    background-color:#B0DFE5;
+text-shadow:1px 1px 1px grey;
+ border-radius: 15px;
+font-style:italic;
+  }
+div.pic1 {
+    float: right;
+    margin-left:5px;
+    padding: 15px;
+    border: 1px  black;
+    text-align: center;
+    margin-top:24px;
+  }
+div.pic2 {
+    float: left;
+    margin-left:20px;
+    margin-right:20px;
+    padding: 15px;
+    border: 1px  black;
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+  }
+p.contact2 {
+    text-align: center;
+    font-size:23px;
+color:gold;
+text-shadow: 2px 2px 2px black;
+}
+table{
+ border-radius: 15px;
+}
+table, th, td {
+    border:3px solid black;
+    text-align:center;
+    background-color:  #e0e0e0;
+    font-size: 21px;
+    margin:auto;
+color:black;
+text-shadow:1px 1px 1px grey;
+  }
+th {
+    background-color: #0fb8ea;
+ border-radius: 15px;
+text-shadow:1px 1px 1px grey;
+  }
+td {
+background-color:#d0f5fc;
+padding:5px;
+ border-radius: 15px;
+}
+button.button {
+background-color:#0fb8ea;
+width:800px;
+height:50px;
+font-size:27px;
+text-shadow:2px 2px 2px grey;
+ border-radius: 15px;
+}
+.button:hover {
+background-color:#008ECC;
+color:white;
+}
+button.button2 {
+background-color:#005bdb;
+width:600px;
+height:40px;
+font-size:23px;
+text-shadow:1px 1px 1px grey;
+ border-radius: 15px;
+}
+.button2:hover{
+background-color:#0038a8;
+color:white;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 1250px;
+  height: 350px;
+  margin-top:70px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  left:30%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front1, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  margin:auto;
+  height: 70%;
+  border-radius:30px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+    background-image: radial-gradient(grey 5%, silver 7%, azure 20%, #B0DFE5 40%);
+    border: 2px solid grey;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}

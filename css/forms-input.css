@@ -1,0 +1,38 @@
+form {
+margin-top:10px;
+width:70%;
+margin:auto;
+text-align:center;
+font-size:22px;
+text-shadow:1px 1px 1px grey;
+background-color:lightgrey;
+padding:15px;
+border: 5px solid black;
+border-radius:20px;
+}
+fieldset.1 {
+border-radius:20px;
+}
+legend {
+text-align:center;
+margin:auto;
+font-weight:bold;
+}
+
+input[type=submit] {
+width:60%;
+height:70px;
+padding:20px;
+margin:auto;
+background-color:#0fb8ea;
+cursor:pointer
+border:none;
+font-size:22px;
+font-weight:bold;
+text-shadow:1px 1px 1px grey;
+border-radius:20px;
+}
+input[type=submit]:hover {
+background-color:#005bdb;
+color:white;
+}
