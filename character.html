@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azur Lane webpage</title>
+    <link rel="stylesheet" type="text/css" href="css/character.css">
+    <link rel="stylesheet" type="text/css" href="css/universal.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" href="yozakura/stylesheet.css" type="text/css" charset="utf-8" />
+    <script src="jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+  <h1><img class="left", src = "images/anchor.png"><img class="neptunenod" src="images/neptunenod.gif"><img src="images/beldance2.gif"><img class="neptunenod1" src="images/neptunenod1.gif"><img class="right", src = "images/anchor.png"><img class="center", src="images/AzurLogo.png"><img src="images/beldance3.gif"></h1>
+  <div class="navbar">
+  <a href="a_main_frame.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn" onclick="window.location.href = 'character.html';">Ships<i class="arrow down"></i></button>
+    <div class="subnav-content">
+      <div class="subnav2">
+        <button class="subnavbtn2">Collab<i class="arrow down"></i></button>
+        <div class="subnav-content2">
+          <a href="navies/hololive.html">Hololive</a>
+          <a href="navies/kizuna_ai.html">Kizuna Ai</a>
+          <a href="navies/neptunia.html">Neptunia</a>
+          <a href="navies/utawarerumono.html">Utawarerumono</a>
+        </div>
+      </div>
+      <a href="navies/eagleunion.html">Eagle Union</a>
+      <a href="navies/royalnavy.html">Royal Navy</a>
+      <a href="navies/sakuraempire.html">Sakura Empire</a>
+      <a href="navies/ironblood.html">Iron Blood</a>
+      <a href="navies/dragonempery.html">Dragon Empery</a>
+      <a href="navies/irislibre.html">Iris Libre</a>
+      <a href="navies/northernparliament.html">Northern Parliament</a>
+      <a href="navies/sardegnaempire.html">Sardegna Empire</a>
+      <a href="navies/vichyadominion.html">Vichya Dominion</a>
+
+    </div>
+  </div>
+  <a href="combat.html">Combat</a>
+  <a href="about_us.html">Contact</a>
+</div>
+  <hr>
+<br>
+
+  <button class="tablink" onclick="openPage('Navies', this, '#4381ff')"  id="defaultOpen"><b>Navies</b></button>
+  <button class="tablink" onclick="openPage('ShipInfo', this, '#5d92ff')"><b>Classifications</b></button>
+  <button class="tablink" onclick="openPage('ShipDrop', this, '#76a3ff')"><b>Ship Drop</b></button>
+  <button class="tablink" onclick="openPage('WoWCollab', this, '#90b4ff')"><b>World of Warships Collab</b></button>
+
+  <div id="Navies" class="tabcontent">
+    <h2 class="head" id="shipsheadani">Azur Lane Navies</h2>
+  <p id="shipsdescani">In Azur Lane, the ships are brought from real life navies.
+    In total, there 9 Navies that is adopted.
+    These navies have been renamed by the Azur Lane developers to avoid any potential copyright infringement sues by the respective countries.
+    Below are the navies and their real world counterparts
+  </p>
+  <table border="2" class="navyequal">
+    <tr>
+      <th><img src="images/symbols/Eagleunion_orig.png"></th>
+        <td class="navyequalname"><b>Eagle Union</b></td>
+        <td class="navyequaldesc">The game counterpart of the United States Navy</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Royal_Navy-logo.png"></th>
+        <td class="navyequalname"><b>Royal Navy</b></td>
+        <td class="navyequaldesc">The game counterpart of Her Majesty's Ship, the Royal Navy</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Sakura-empire-logo.png"></th>
+        <td class="navyequalname"><b>Sakura Empire</b></td>
+        <td class="navyequaldesc">The game counterpart of the Imperial Japanese Navy</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Ironblood-logo.png"></th>
+        <td class="navyequalname"><b>Iron Blood</b></td>
+        <td class="navyequaldesc">The game counterpart of the Kriegsmarine Ship Navy</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Dragon_Empery-logo.png"></th>
+        <td class="navyequalname"><b>Dragon Empery</b></td>
+        <td class="navyequaldesc">The game counterpart of the Republic of China Navy and the People's Liberation Army Navy.</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Sardegna_Empire.png"></th>
+        <td class='navyequalname'><b>Sardegna Empire</b></td>
+        <td class="navyequaldesc">The game counterpart of the Italian Regia Marina.</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Northern_Parliament-logo.png"></th>
+        <td class="navyequalname"><b>Northern Parliament</b></td>
+        <td class="navyequaldesc">The game counterpart of the Soviet Navy, the Voyenno-Morskoi Flot.</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Vichya_Dominion.png"></th>
+        <td class="navyequalname"><b>Vichya Dominion</b></td>
+        <td class="navyequaldesc">The game counterpart of the Marine Nationale Forces of Vichy France.</td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Iris_Libre.png"></th>
+        <td class="navyequalname"><b>Iris Libre</b></td>
+        <td class="navyequaldesc">The game counterpart of the Free French Naval Forces. Also known as the Forces Navales Françaises Libres or FNFL, these ships escaped to British Port before the surrender, subsequently boarded by the British, and converting these ships to the FFNF.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="ShipInfo" class="tabcontent">
+  <h2 class="head" id="shipsheadani">Azur Lane Ship Classifications</h2>
+  <p id="shipsdescani">
+    In Azur Lane, the ships uses classifications that exists in real life, or had existed back during war times.
+    These classifications are used to describe the type and characteristics of a ship.
+    For example, destroyers are fast and pack powerful torpedoes and light cruisers are also fast but has less torpedo firepower.
+    There are a total of 13 classes that Azur Lane adopts into the game, from Heavy Cruisers to Aircraft Carriers to Submarines.
+    Below are the description and some background of the usage and equipment of each classes.
+  </p>
+  <table border="2" class="shipclass">
+     <tr>
+      <th><img src="images/symbols/Icon_DD.png"></th>
+      <td class="classification"><b>Destroyers</b></td>
+      <td class="disc">
+        Destroyers are speed-based light ships.
+        They are equipped with weak guns and much less health than cruisers, but carry powerful Torpedoes.
+        They are fast, maneuverable and long-enduranced warship, intended for escorting larger ships in a fleet to defend against other enemy Destroyers.
+        In Azur Lane, Destroyers are the fastest, yet most fragile of the 3 Escort Ships and are also equipped with weak to mediocre but fast-firing cannons and devastating torpedoes.
+        They vary stats among nations, IJN destroyers tend to have weak firepower but powerful torpedoes and USN destroyers tend to be more balanced, for example.
+      </td>
+      </tr>
+      <tr>
+        <th><img src="images/symbols/Icon_CL.png"></th>
+        <td class="classification"><b>Light Cruisers</b></td>
+        <td class="disc">
+          Shortened from the phrase "Light Armoured Cruisers", light cruisers was a classification used to refer to small to medium warships, equipped with a protective belt and deck.
+          Compared to other contemporary ships, light cruisers were lighter and smaller.
+          Nevertheless, they were still considered as actual cruisers, retaining independant and longer range of action.
+          They served many roles throughout history, primarily as convoy escorts and destroyer command ships, while also acting as scouts and fleet support vessel for battle fleets.
+          In Azur Lane, light cruisers are an escort ship type and have a balanced stats, in terms of speed, survivability and firepower, varying amongst the ships.
+          They tend to usually be loaded with a medium caliber naval gun as their main weapon and torpedoes as their secondary weapons.
+        </td>
+      </tr>
+
+      <tr>
+        <th><img src="images/symbols/Icon_CA.png"></th>
+        <td class="classification"><b>Heavy Cruisers</b></td>
+        <td class="disc">
+          Heavy cruisers was a type of naval warship, usually equipped with a 203mm calibre gun, bounded by the Washington and London Naval Treaties
+          In Azur Lane, they are the heavy hitters of the Escort Fleet.
+          In exchange for speed, mobility and evasion, they are able to deals massive damage to other similar ships and act as shields for fragile Destroyer and Light Cruiser type ships, in exemption with IJN Heavy Cruisers, which are more mobile and evasive but less durable.
+          They equip Torpedoes as secondary guns, like other escort ships, in exemption with USN ships in which they equip Destroyer-type guns instead
+        </td>
+        </tr>
+      <tr>
+        <th><img src="images/symbols/Icon_BM.png"></th>
+        <td class="classification"><b>Monitors</b></td>
+        <td class="disc">
+          Monitor ships are a heavily armed warship used primarily for surveillance and scouting.
+          Named and design preceeded after USS Monitor.
+          Carried disproportionately large guns, but they are neither fast nor strongly armoured.
+          In Azur Lane, Monitors are weak but powerful shelling-support warships and consume less fuel, unlike Battleships and battlecruisers.
+        </td>
+        </tr>
+      <tr>
+          <th><img src="images/symbols/Icon_CB.png"></th>
+          <td class="classification"><b>Large Cruisers</b></td>
+          <td class="disc">
+            Unlike Heavy Cruisers, Large Cruisers are not bounded by the Washington and London Naval Treaties.
+            Thus, several nations started developing counter cruiser ships, wuth high speed, ironclad armour, and guns stronger than 8-inch guns.
+            All designs of the class was not too successful. They came late, when naval airspace power was quickly displacing gun-armed ships.
+            Cost-wise, they are not effective in their escort roles and in development.
+            Some examples of the class include the Japanese Azuma-class, Soviet Kronshtadt-class, Dutch Deisgn 1047, and the American Alaska-class.
+            Only the Alaskas had some ships completed, only to be scrapped and mothaballed not too long after.
+            Alternatively named "super cruisers", "unrestricted cruisers" and "battlecruisers".
+          </td>
+          </tr>
+      <tr>
+         <th><img src="images/symbols/Icon_BB.png"></th>
+         <td class="classification"><b>Battleships</b></td>
+         <td class="disc">
+           A battleship is a large armoured warship with a main battery consisting of large caliber guns.
+           During the late 19th and early 20th centuries the battleship was the most powerful type of warship, and a fleet centered around the battleship was part of the command of the sea doctrine for several decades.
+           By WWII however, batteships were made obsolote against the faster destroyers, secretive submarines and versatile aircraft carriers, became increasingly useful.
+           The term 'battleship' came into formal use in late 1880s to describe a type of ironclad warship, now referred as pre-dreadnought battleships.
+           Battleships became symbols of naval dominance and national might and prowess, which played heavy roles in crucial diplomacy and military strategy.
+           Played a less vital role in WWII than aircraft carriers, which made most nations mothball or scrap battleships.
+           USN kept four battleships which were last used in the Gulf War in 1991, the last one of which was struck in the 2000s.
+         </td>
+         </tr>
+      <tr>
+         <th><img src="images/symbols/Icon_BB.png"></th>
+         <td class="classification"><b>Battlecruisers</b></td>
+         <td class="disc">A type of capital ship in the 1900s,
+             Similar to battleships in terms of size, costs and armament, they generally carry less armour for faster speed.
+             First designed in the United Kingdom around 1910 as a development to the armoured cruiser.
+             It was meant to outspeed any ship of similar armament and hunt ships with slower, lesser armed ships by barraging them with heavy gunfire while evading combat with more stronger battleships.
+             They were increasingly used alongside better armed battleships as its contruction increased,
+         </td>
+         </tr>
+      <tr>
+         <th><img src="images/symbols/Icon_BBV.png"></th>
+         <td class="classification"><b>Aviation battleships</b></td>
+         <td class="disc">
+           A hybridization the best of a Battleship and its guns, with the Carrier and air support, Aviation Battleships allow performance of both naval gun firing and lifting off aircrafts in exchange for the secondary gun, which made them unable to defend against incoming enemy ships.
+           IJN Ise and Hyuuga were the only full coversion and and operational service for Aviation Battleships, converted to compansate for the loss of their carriers in the Battle of Midway.
+           Never allocated planes, they were rendered pointless
+           Due to the expense of conversion, the loss of firepower gave the ships a serious weakness due to the ferocity of US air strikes, giving the US a mightier airspace control.
+           First attempted conversion was HMS Furious, but was converterted to full aircraft carrier as the short landing deck was deemed impractical.
+         </td>
+         </tr>
+       <tr>
+         <th><img src="images/symbols/Icon_CV.png"></th>
+         <td class="classification"><b>Aircraft Carriers</b></td>
+         <td class="disc">
+           Aircraft Carriers are the key players in naval warfare that provide air support for the fleet.<br>
+           They carry:
+           <ul>
+           <li>Torpedo Bombers- These planes carry torpedoes which launch as they fly across.</li>
+           <li>Dive Bombers- These planes carry bombs that drops above the targets.</li>
+           <li>Fighters- These planes are sent to defend against enemy plans and carriers.</li>
+         </td>
+         </tr>
+      <tr>
+        <th><img src="images/symbols/Icon_CV.png"></th>
+        <td class="classification"><b>Light Aircraft Carriers</b></td>
+        <td class="disc">
+          Light aircraft carriers, or light fleet carrier, is an carrier smaller than normal carriers of a navy.
+          Definitions of its type vary by country;
+          They typically carry half or two-thirds aircrafts than a full-sized fleet carrier.
+          Similar in concept to an escort carrier, it was intended for higher speeds to be deployed alongside fleet carriers instead.
+          In Azur Lane, CVL has lower stats than CVs including lower Health Points.
+          They can attack  enemy submarines if equipped with ASW Aircraft.
+        </td>
+        </tr>
+      <tr>
+        <th><img src="images/symbols/Icon_AR.png"></th>
+        <td class="classification"><b>Repair ships</b></td>
+        <td class="disc">
+          Repair ships are naval auxillary ships designed to provide support by maintenanace to warships.
+          The two repair ships can heal their fleet mid-battle with their cranes and skills or by emergancy repairs out of battle.
+          They have no offensive abilites, but upon limit break, can mount two AA guns.
+          On the second limit break, they give additional ammo to the fleet, gain AA Gun efficiency and an extra AA Gun mount for each gun.
+          The only two Repair Ships are Vestal and Akashi.
+        </td>
+        </tr>
+      <tr>
+        <th><img src="images/symbols/Icon_SS.png"></th>
+        <td class="classification"><b>Submarines</b></td>
+        <td class="disc">
+          A submarine is a watercraft capable of independant operations underwater.
+          Designs originally took off in 19th Century, for several navies to adopt.
+          Its military uses are attack enemy suface ships, and other submarines, aircraft protection, blockade running and reconnaissance.
+          IJN had submarines with the highest submerged speeds in WWII and could carry multiple aircraft, while equipped with oxygen-propelled Type 95 tank, one of the most advanced torpedoes of conflict.
+        </td>
+        </tr>
+      <tr>
+          <th><img src="images/symbols/Icon_SS.png"></th>
+          <td class="classification"><b>Submarine Carriers</b></td>
+          <td class="disc">
+          Submarine Carriers were experimental submarines designed to launch seaplanes.
+          </td>
+          </tr>
+  </table>
+  </div>
+
+  <div id="ShipDrop" class="tabcontent">
+  <h2 class="head" id="shipsheadani">Ship Drop</h2>
+  <p id="shipsdescani">In Azur Lane, there are multiple method of obtaining ships, with some of them being exclusive to those methods.
+      The most popular method is by rolling the gacha, which is a luck-based lottery that rewards ships.
+      On certain events, some ships get rate-ups, which are increased percentage of the ship appearing, for a limited time.
+      Ship gacha is split based on the rarity and the type of the ships.
+      Below is the rarity table and its drop rate.
+    </p>
+  <table border="1" class="rate">
+    <tr>
+      <th rowspan="2">Rarity Logo</th>
+      <th colspan="3" class="normdrop">Rate Drop %</th>
+      <th rowspan="2">Rate-up Drop %</th>
+    </tr>
+    <tr class="subrate">
+      <td><i>Light</i></td>
+      <td><i>Heavy</i></td>
+      <td><i>Special</i></td>
+    </tr>
+    <tr>
+        <td class="rarity"><img src="images/symbols/sr.png"></td>
+      <td colspan="3">7%</td>
+      <td>+2%</td>
+    </tr>
+
+    <tr>
+      <td class="rarity"><img src="images/symbols/Elite.png"></td>
+      <td colspan="3">12%</td>
+      <td>+2.5%</td>
+    </tr>
+
+    <tr>
+      <td class="rarity"><img src="images/symbols/Rare.png"></td>
+      <td>26%</td>
+      <td colspan="2">51%</td>
+      <td>+5.0%</td>
+    </tr>
+
+    <tr>
+      <td class="rarity"><img src="images/symbols/Common.png"></td>
+      <td>55%</td>
+      <td colspan="2">30%</td>
+      <td>+10.0%</td>
+    </tr>
+  </table>
+  </div>
+
+  <div id="WoWCollab" class="tabcontent">
+  <h2 class="head" id="shipsheadani">World of Warships Collab: Research Ships</h2>
+  <p id="shipsdescani">Azur Lane collaborated with the game World of Warships, due to how similar both games are in naval warfare.
+     For Azur Lane, they obtained 12 Priority ships, all of which however, only reached design stage, and never actually went to the construction stage.
+     In other words, these ships dont exists in real life, but only as a concept, which were ultimately scrapped after the end of WWII.
+     Of the 12 ships, there is 2 ships which were categorized in a new and higher classification-<img src="images/symbols/Decisive.png">(Decisive).
+     These two ships, Azuma and Friedrich de Große, were concepted to be the strongest of their nation, essentially their flagship.
+     However, due to the loss of both Germany and Japan in WWII, these conception never came to fruition.
+     In Azur Lane, the Decisive ships are constructable, but, along with the other 10 Priority ships, require Research materials and 3 million EXP to obtain.
+   </p>
+
+  <table border="3" class="priority1">
+    <caption>Priority 1</caption>
+    <tr>
+    <td><img src="images/royalnavy/Neptune.png"></td>
+    <td><img src="images/royalnavy/Monarch.png"></td>
+    <td><img src="images/sakuraempire/Ibuki.png"></td>
+    <td><img src="images/sakuraempire/Izumo.png"></td>
+    <td><img src="images/ironblood/Roon.png"></td>
+    <td><img src="images/irislibre/Saint_Louis.png"></td>
+  </tr>
+    <tr class="priname">
+      <td>Neptune</td>
+      <td>Monarch</td>
+      <td>Ibuki</td>
+      <td>Izumo</td>
+      <td>Roon</td>
+      <td>Saint Louis</td>
+    </tr>
+    </table>
+
+  <table border="3" class="priority2">
+    <caption>Priority 2</caption>
+    <tr>
+      <td><img src="images/eagleunion/Seattle.png"></td>
+      <td><img src="images/eagleunion/Georgia.png"></td>
+      <td><img src="images/sakuraempire/Kitakaze.png"></td>
+      <td><img src="images/sakuraempire/Azuma.png"></td>
+      <td><img src="images/ironblood/Friedrich_der_Grosse.png"></td>
+      <td><img src="images/vichyadominion/Gascogne.png"></td>
+    </tr>
+    <tr>
+      <td class="priname">Seattle</td>
+      <td class="priname">Georgia</td>
+      <td class="priname">Kitakaze</td>
+      <td class="prideci">Azuma</td>
+      <td class="prideci">Friedrich der<br>Große</td>
+      <td class="priname">Gascogne</td>
+    </tr>
+  </table>
+  </div>
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//second heaading for  ships page
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<hr>
+<div class="sidenav">
+  <a href="https://www.instagram.com/anon.oasis/" target="_blank">
+  <div class="container">
+    <img src="images/symbols/instagram.png" class="image">
+    <span class="tooltiptext">Instagram</span>
+  </div></a>
+
+<a href="https://twitter.com/Demblade" target="_blank">
+  <div class="container">
+    <img src="images/symbols/twitter.png" class="image2">
+    <span class="tooltiptext2">Twitter</span>
+  </div></a>
+
+<a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank">
+  <div class="container">
+    <img src="images/symbols/reddit.png" class="image3">
+    <span class="tooltiptext3">Reddit</span>
+  </div></a>
+</body>
+</html>
