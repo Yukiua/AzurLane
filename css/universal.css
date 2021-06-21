@@ -2,6 +2,7 @@ body {
  background-color:#e0e0e0;
 background-image: linear-gradient(silver, darkblue);
 background-repeat:no-repeat;
+font-family:'Caladea', serif;
 }
 h1 {
  text-align: center;
@@ -21,15 +22,15 @@ h1 img.center {
  float: center;
  margin: 0 5px 0 0
 }
-.neptunenod {
-position: absolute;
-top: 10%;
-left:0%;
+h1 img.neptunenod {
+ float:left;
+ top 100%;
+ left:0%;
 }
-.neptunenod1 {
-position:absolute;
-top:10%;
-right:0%;
+h1 img.neptunenod1 {
+ float:right;
+ top:100%;
+ right:0%;
 }
 .navbar {
   overflow: hidden;
@@ -64,7 +65,7 @@ right:0%;
   margin: 0;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
+.navbar a:hover, .subnav:hover .subnavbtn, .navbar a.currentpage, .subnav .currentpage{
   background-color:#0DA5D2;
 }
 
@@ -72,7 +73,8 @@ right:0%;
   display: none;
   position: absolute;
   left: 0;
-  background-color: #6666FF;
+  border-style: solid; 
+  background: #0fa2ea;
   width: 92%;
   z-index: 1;
   padding:20px;
@@ -85,8 +87,8 @@ right:0%;
   text-decoration: none;
 }
 
-.subnav-content a:hover {
-  background-color: #5151CC;
+.subnav-content a:hover, .subnav-content a.currentpageship{
+  background-color: #188fc9;
   color: black;
   border-radius:40px;
 }
@@ -115,7 +117,7 @@ margin-top:30px;
   font-weight:bold;
 }
 .subnav2:hover .subnavbtn2 {
-  background-color: #5151CC;
+  background-color: #188fc9;
   border-radius:40px;
 
 }
@@ -124,7 +126,8 @@ margin-top:30px;
   display: none;
   position: absolute;
   left: 0;
-  background-color: #993299;
+  border-style:solid;
+  background-color: #0f76ea;
   width: 38%;
   z-index: 1;
   padding:20px;
@@ -138,8 +141,8 @@ margin-top:30px;
   text-decoration: none;
 }
 
-.subnav-content2 a:hover {
-  background-color: #7A287A;
+.subnav-content2 a:hover, .subnav-content2 a.currentpageship {
+  background-color: #1768c3;
   border-radius:40px;
 }
 
@@ -179,153 +182,34 @@ margin-top:30px;
 #myBtn:hover {
  background-color: #0080FF;
 }
-.sidenav {
-  width: 45px;
-  position: fixed;
-  z-index: 1;
-  bottom: 170px;
-  left: 2px;
-  background: white;
-  overflow-x: visible;
-  padding: 2px 0;
-border-radius:20px;
 
+.mediacontainer {
+width:auto;
+height:100px;
+background:black;
+bottom:0px;
+left:0px;
+right:0px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+background-size:100% 100%;
 }
-
-.sidenav a {
-  padding: 3px 0px 2px 9px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
+.mediacontainer p.endcredit{
+color:white;
+font-size:10px;
+word-spacing:1px;
+text-shadow: 1px 1px 1px silver;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.image{
+margin-top:10px;
+padding:5px;
 }
-.container {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  position: relative;
-  display: inline-block;
-  width: 80%;
-  height: auto;
-}
-.image + .tooltiptext {
-    visibility: hidden;
-    width: 250%;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: -2px;
-    left: 110%;
-    font-size: 17px;
-    font-family: Arial;
-
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.image + .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-}
-.image:hover + .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
 .image2 {
-  position: relative;
-  display: inline-block;
-  width: 80%;
-  height: auto;
-}
-.image2 + .tooltiptext2 {
-    visibility: hidden;
-    width: 200%;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: -2px;
-    left: 110%;
-    font-size: 17px;
-    font-family: Arial;
-
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.image2 + .tooltiptext2::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-}
-.image2:hover + .tooltiptext2 {
-    visibility: visible;
-    opacity: 1;
+margin-top:10px;
+padding:5px;
 }
 .image3 {
-  position: relative;
-  display: inline-block;
-  width: 80%;
-  height: auto;
-}
-.image3 + .tooltiptext3 {
-    visibility: hidden;
-    width: 200%;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: -2px;
-    left: 110%;
-    font-size: 17px;
-    font-family: Arial;
-
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.image3 + .tooltiptext3::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-}
-.image3:hover + .tooltiptext3 {
-    visibility: visible;
-    opacity: 1;
+margin-top:10px;
+padding:5px;
 }

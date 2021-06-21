@@ -141,7 +141,7 @@ padding:10px;
   font-style:italic;
 }
 
-.tablink:hover {
+.active, .tablink:hover {
   background-color: #777;
   background-image: radial-gradient(#30c3c0,#1f208b);
 }
@@ -154,8 +154,8 @@ padding:10px;
   border-radius:30px;
 }
 
-#Navies {background-color: #4381ff ;}
-#ShipInfo {background-color: #5d92ff ;}
+#Navies {background-color: #76a3ff ;}
+#ShipInfo {background-color: #76a3ff ;}
 #ShipDrop {background-color: #76a3ff ;}
-#WoWCollab {background-color: #90b4ff ;}
+#WoWCollab {background-color: #76a3ff ;}
 

@@ -6,10 +6,18 @@
   <link rel="stylesheet" type="text/css" href="css/universal.css">
   <link rel="stylesheet" type="text/css" href="css/animations.css">
   <link rel="stylesheet" href="yozakura/stylesheet.css" type="text/css" charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
   <script src="jquery-3.4.1.js"></script>
   </head>
   <body>
-    <h1><img class="left", src = "images/anchor.png"><img class="neptunenod" src="images/neptunenod.gif"><img src="images/beldance2.gif"><img class="neptunenod1" src="images/neptunenod1.gif"><img class="right", src = "images/anchor.png"><img class="center", src="images/AzurLogo.png"><img src="images/beldance3.gif"></h1>
+    <h1>
+      <img class="left", src = "images/anchor.png">
+      <img class="neptunenod" src="images/neptunenod.gif">
+      <img src="images/beldance2.gif">
+      <img class="right", src = "images/anchor.png">
+      <img class="neptunenod1" src="images/neptunenod1.gif">
+      <img class="center", src="images/AzurLogo.png">
+      <img src="images/beldance3.gif"></h1>
   <div class="navbar">
   <a href="a_main_frame.html">Home</a>
   <div class="subnav">
@@ -37,7 +45,7 @@
     </div>
   </div>
   <a href="combat.html">Combat</a>
-  <a href="about_us.html">Contact</a>
+  <a class="currentpage" href="about_us.html">Contact</a>
 </div>
   <hr>
 
@@ -66,14 +74,13 @@
 
     <br>
     I studied at Evergreen Primary School, due to closeness in proximity.
-    I graduated EGPS with a T-Score of 186, in which I chose to enrol in Naval Base Secondary School, as it was my brother's previous school, which my parents had already made relations to.
+    I graduated EGPS with a T-Score of 186, in which I chose to enrol in Naval Base Secondary School.
     As I did not have enough T-Score to be enrolled in the Express course, I was forced to enrol in the Normal(Academic) course.
     I picked the  InfoComm CCA as I had interest in programming.
     At the end of Secondary 2, I was given the option to be laterally transferred to the Express course, due to my excellent conduct and grades.
     I proceeded on to take the GCE 'O' Level, in which I obtained an L1R4 of 17.
-    Luckily, I had attempted to apply to Nanyang Polytechnic in the Diploma in Infomation Technology via the Early Admission Exercise, in which I was successfully approved.
+    Luckily, I successfully applied to Nanyang Polytechnic in the Diploma in Infomation Technology via the Early Admission Exercise beforehand.
     Therefore, I enrolled to Nanyang Polytechnic as soon as the 'O' level results were released as I had already claimed a spot in the course.
-    Which leads us to the present time.
     <br>
 
     </p>
@@ -141,12 +148,10 @@
 
     <br>
 </div>
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front1">
-        <h2 class="head" id ="cont">Contact Me Here</h2>
-      </div>
-      <div class="flip-card-back">
+
+
+<button class="accordion" id="cont"><i class='contactdown2'></i>Contact Me<i class='contactdown'></i></button>
+<div class="panel">
   <table style="width:80%">
     <tr>
       <th>Personal Email</th>
@@ -172,21 +177,48 @@
       <button class="button2", onclick="myFunction2()">Click Here to send me a review :D</button>
       <script>
       function myFunction2() {
-        window.open("form-input.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=900,height=900");
+        window.open("form-input.html", "_blank");
       }
       </script>
     </div></td>
-  </tr> 
+  </tr>
 </table>
 </div>
-</div>
-</div>
+
   <p class="contact2"><b>></b>>><i>Contact me for any feedback, review or any other questions, so that your enquiries will be answered as soon as possible.</i><<<b><</b></p>
 <br>
 
 <br>
+<hr>
+<div class=mediacontainer>
+  <div class=mediaicon>
+    <a href="https://www.instagram.com/anon.oasis/" target="_blank"><img src="images/symbols/instagram.png" class="image"></a>
+    <a href="https://twitter.com/Demblade" target="_blank"><img src="images/symbols/twitter.png" class="image2"></a>
+    <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank"><img src="images/symbols/reddit.png" class="image3"></a>
+  </div>
+  <p class="endcredit">
+    All animations are provided by animista.net<br>
+    All Azur Lane resources are provided by azurlane.koumakan.jp.<br>
+    All of the website made from scratch with blood, sweat and tears of Aqil Rifaie.<br>
+  </p>
+</div>
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 //Get the button
 var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -204,24 +236,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-  <hr>
-  <div class="sidenav">
-    <a href="https://www.instagram.com/anon.oasis/" target="_blank">
-    <div class="container">
-      <img src="images/symbols/instagram.png" class="image">
-      <span class="tooltiptext">Instagram</span>
-    </div></a>
-
-  <a href="https://twitter.com/Demblade" target="_blank">
-    <div class="container">
-      <img src="images/symbols/twitter.png" class="image2">
-      <span class="tooltiptext2">Twitter</span>
-    </div></a>
-
-  <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank">
-    <div class="container">
-      <img src="images/symbols/reddit.png" class="image3">
-      <span class="tooltiptext3">Reddit</span>
-    </div></a>
   </body>
   </html>

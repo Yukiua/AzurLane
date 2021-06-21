@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/universal.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" href="yozakura/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
+
     <script src="jquery-3.4.1.js"></script>
 
 </head>
@@ -38,7 +40,7 @@
 
     </div>
   </div>
-  <a href="combat.html">Combat</a>
+  <a class="currentpage" href="combat.html">Combat</a>
   <a href="about_us.html">Contact</a>
 </div>
   <hr>
@@ -54,7 +56,7 @@
 </p>
 
 
-<button class="tablink" onclick="openPage('PvE', this, '#4381ff')"  id="defaultOpen"><b>PvE</b></button>
+<button class="tablink active" onclick="openPage('PvE', this, '#4381ff')"  id="defaultOpen"><b>PvE</b></button>
 <button class="tablink" onclick="openPage('PvP', this, '#5d92ff')"><b>PvP</b></button>
 
 <div id="PvE" class="tabcontent">
@@ -167,7 +169,19 @@
     <img class="combatpic" src="images/combat/victory4.jpg">
 </div>
 
-
+<hr>
+<div class=mediacontainer>
+  <div class=mediaicon>
+    <a href="https://www.instagram.com/anon.oasis/" target="_blank"><img src="images/symbols/instagram.png" class="image"></a>
+    <a href="https://twitter.com/Demblade" target="_blank"><img src="images/symbols/twitter.png" class="image2"></a>
+    <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank"><img src="images/symbols/reddit.png" class="image3"></a>
+  </div>
+  <p class="endcredit">
+    All animations are provided by animista.net<br>
+    All Azur Lane resources are provided by azurlane.koumakan.jp.<br>
+    All of the website made from scratch with blood, sweat and tears of Aqil Rifaie.<br>
+  </p>
+</div>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
@@ -197,6 +211,11 @@ function openPage(pageName,elmnt,color) {
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
+    tablinks[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active")
+      current[0].className = current[0].className.replace(" active","");
+      this.className += " active";
+    });
   }
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
@@ -205,25 +224,6 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-<hr>
-<div class="sidenav">
-  <a href="https://www.instagram.com/anon.oasis/" target="_blank">
-  <div class="container">
-    <img src="images/symbols/instagram.png" class="image">
-    <span class="tooltiptext">Instagram</span>
-  </div></a>
-
-<a href="https://twitter.com/Demblade" target="_blank">
-  <div class="container">
-    <img src="images/symbols/twitter.png" class="image2">
-    <span class="tooltiptext2">Twitter</span>
-  </div></a>
-
-<a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank">
-  <div class="container">
-    <img src="images/symbols/reddit.png" class="image3">
-    <span class="tooltiptext3">Reddit</span>
-  </div></a>
 
 </body>
 </html>

@@ -47,6 +47,8 @@ text-decoration:none;
 color:grey;
 }
 
+
+
 td.ship {
 font-size:20px;
 text-align:center;
@@ -58,22 +60,27 @@ th.category {
 font-size:22px;
 text-shadow:2px 2px 2px grey;
 background-color:#949494;
-
 }
-caption{
+.subship th.category {
+width:120px;
+}
+#shiphead{
 margin-top:20px;
-font-size:57px;
+font-size:55px;
 font-weight:bold;
 text-shadow:2px 2px 2px grey;
 text-align:center;
 margin-bottom:25px;
 font-family: 'yozakuraregular';
   }
-
+.subship {
+display:block;
+border:0px;
+overflow-x:auto;
+}
 .total {
 margin:auto;
 border-collapse:collapse;
-
 }
 .decisive {
 background:linear-gradient(to right, rgba(50,255,231,1) 19%,rgba(215,128,237,1) 100%);

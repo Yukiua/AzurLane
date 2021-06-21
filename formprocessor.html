@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <title>Form Processor</title>
@@ -7,30 +6,49 @@
 <style>
   h2 {
     color:white;
-    margin:auto;
+    text-align:center;
+    font-size:50px;
   }
   body{
-    background-color:grey;
+    background-color:darkblue;
+  }
+  .button{
+    font-size:20px;
+    padding:10px;
+    border-radius: 10px;
+    margin-top:20px;
+    text-shadow: 2px 1px 1px lightgrey;
+    background-color:cyan;
+    border-color: red;
+  }
+  .button:hover {
+    background-color:#00B2B2;
+     color:white;
+     text-shadow: 2px 2px 1px black;
+     border-color:darkred;
   }
   </style>
 </head>
 <body>
-  <h1><img class="left", src = "images/anchor.png"><img class="beldance", src="images/beldance2.gif"><img class="right", src = "images/anchor.png"><img class="center", src="images/AzurLogo.png"><img class="beldance", src="images/beldance3.gif"></h1>
+  <h1>
+    <img class="left", src = "images/anchor.png">
+    <img class="neptunenod" src="images/neptunenod.gif">
+    <img src="images/beldance2.gif">
+    <img class="right", src = "images/anchor.png">
+    <img class="neptunenod1" src="images/neptunenod1.gif">
+    <img class="center", src="images/AzurLogo.png">
+    <img src="images/beldance3.gif">
+</h1>
 <hr style="height:2px;background-color:#0fb8ea;">
-<script type="text/javascript">
-<!-- HIDE FROM INCOMPATIBLE BROWSERS
-document.write("<h1>Your review has been submitted!<br>Thank you very much!</h1><h2>You entered the following data:</h2>");
-var formData = location.search;
-formData = formData.substring(1, formData.length);
-while (formData.indexOf("+") != -1) {
-	formData = formData.replace("+", " ");
-}
-formData = unescape(formData);
-var formArray = formData.split("&");
-for (var i=0; i < formArray.length; ++i) {
-	document.writeln(formArray[i] + "<br />");
-}
-// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
-</script>
+  <h2>Thank you for your review!</h2>
+
+<div class="buttcontainer">
+    <button class="button" type="button" onclick="functionbutt()"><b> <== Click here to go back to Home page</b></button>
+    <script>
+    function functionbutt(){
+      window.open("a_main_frame.html","_self");
+    }
+    </script>
+</div>
 </body>
 </html>

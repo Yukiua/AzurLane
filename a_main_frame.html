@@ -5,16 +5,26 @@
   <link rel="stylesheet" type="text/css" href="css/a_main_frame.css">
   <link rel="stylesheet" type="text/css" href="css/universal.css">
   <link rel="stylesheet" type="text/css" href="css/animations.css">
-  <link rel="stylesheet" href="../yozakura/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="yozakura/stylesheet.css" type="text/css" charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
   <script src="jquery-3.4.1.js"></script>
 
 
   </head>
   <body>
 
-  <h1><img class="left", src = "images/anchor.png"><img class="neptunenod" src="images/neptunenod.gif"><img src="images/beldance2.gif"><img class="neptunenod1" src="images/neptunenod1.gif"><img class="right", src = "images/anchor.png"><img class="center", src="images/AzurLogo.png"><img src="images/beldance3.gif"></h1>
+  <h1>
+    <img class="left", src = "images/anchor.png">
+    <img class="neptunenod" src="images/neptunenod.gif">
+    <img src="images/beldance2.gif">
+    <img class="right", src = "images/anchor.png">
+    <img class="neptunenod1" src="images/neptunenod1.gif">
+    <img class="center", src="images/AzurLogo.png">
+    <img src="images/beldance3.gif">
+</h1>
+
   <div class="navbar">
-  <a href="a_main_frame.html">Home</a>
+  <a class="currentpage" href="a_main_frame.html">Home</a>
   <div class="subnav">
     <button class="subnavbtn" onclick="window.location.href = 'character.html';">Ships<i class="arrow down"></i></button>
     <div class="subnav-content">
@@ -44,25 +54,68 @@
   <hr>
 
 <h1 class="subhead">WELCOME TO</h1>
-<h1 class="azurlane" id="heading">Azur Lane</h1>
+<h1 class="azurlane" id="heading">AZUR LANE</h1>
 
+<br>
 
+<br>
 
+<br>
 
-<iframe width="500" height="240" src="https://www.youtube.com/embed/Zd6MJZvUiNw?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<div class="banner">
+<img class="bluebanner" src="images/banner.png">
+<img class="belwed" src="images/BelfastWedding2.png">
+<h2 class="bannertext">Engage the enemy with shipgirls!</h2>
+<iframe class="ytvid" width="500" height="240" src="https://www.youtube.com/embed/Zd6MJZvUiNw?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<br>
 
+<br>
 
+<br>
 
+<br>
 
+<br>
 
+<br>
+<div class="azurinfo">
+<h2 class="azurinfotext">What is Azur Lane?</h2>
+<div class="parallelbg">
+<p class="azurinfop">
+  Azur Lane is a Chinese mobile game, developed by Manjuu and Yongshi, published by BiliBili.
+  It is a side-scrolling shoot'em up simulation RPG, which includes ships from real navies like the United States Navy, Royal Navy etc., anthropomorphized into moe Anime shipgirls.
+  The protagonists of the game is generally referred to American destroyer USS Laffey, British destroyer HMS Javelin, German destroyer KMS Z23 and Japanese destroyer IJN Ayanami, with the last two interchangeable with Global and CN/JP respectively.
+  The Players of the game is referred to as 'Shikikan', which is Commander is Japanese.
+  Servers went up in CN on 25 May 2017 and 2 June 2017 for iOS and Android respectively.
+  JP servers opened on 14 September for both iOS and Android, while Global servers opened for Open Beta on 16 August 2018, officially released on 20 May 2019 for both iOS and Android.
+</p></div>
+</div>
 
+<div class="butnext">
+<button class="nextstep" type="button" onclick="functionbutton()">Check out the game features!<i class="arrowright"></i></button>
+</div>
 
-
-
-
+<hr>
+<div class=mediacontainer>
+  <div class=mediaicon>
+    <a href="https://www.instagram.com/anon.oasis/" target="_blank"><img src="images/symbols/instagram.png" class="image"></a>
+    <a href="https://twitter.com/Demblade" target="_blank"><img src="images/symbols/twitter.png" class="image2"></a>
+    <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank"><img src="images/symbols/reddit.png" class="image3"></a>
+  </div>
+  <p class="endcredit">
+    All animations are provided by animista.net<br>
+    All Azur Lane resources are provided by azurlane.koumakan.jp.<br>
+    All of the website made from scratch with blood, sweat and tears of Aqil Rifaie.<br>
+  </p>
+</div>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <script>
+  function functionbutton() {
+    window.open("character.html","_self")
+  }
   //Get the button
   var mybutton = document.getElementById("myBtn");
   // When the user scrolls down 20px from the top of the document, show the button
@@ -80,24 +133,5 @@
     document.documentElement.scrollTop = 0;
   }
   </script>
-  <hr>
-  <div class="sidenav">
-    <a href="https://www.instagram.com/anon.oasis/" target="_blank">
-    <div class="container">
-      <img src="images/symbols/instagram.png" class="image">
-      <span class="tooltiptext">Instagram</span>
-    </div></a>
-
-  <a href="https://twitter.com/Demblade" target="_blank">
-    <div class="container">
-      <img src="images/symbols/twitter.png" class="image2">
-      <span class="tooltiptext2">Twitter</span>
-    </div></a>
-
-  <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank">
-    <div class="container">
-      <img src="images/symbols/reddit.png" class="image3">
-      <span class="tooltiptext3">Reddit</span>
-    </div></a>
   </body>
   </html>

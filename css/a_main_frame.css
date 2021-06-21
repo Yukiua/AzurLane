@@ -2,5 +2,94 @@
   font-size:50px; 
 }
 #heading {
-font-size:150px;
+font-size:250px;
+font-style:italic;
 }
+.banner{
+position:relative;
+}
+.bluebanner {
+background-repeat:no-repeat;
+display:block;
+width: 100% !important;
+max-width:100%;
+height:500px;
+}
+.bannertext {
+position:absolute;
+font-size:55px;
+font-style:italic;
+text-shadow: -1px -1px 0 #000, 1px -1px 0  #000, -1px 1px 0  #000, 1px 1px 0  #000;
+font-weight:bold;
+color:gold;
+top:0px;
+right:5%;
+}
+.ytvid {
+position:absolute;
+top:30%;
+right:5%;
+}
+.belwed {
+position:absolute;
+top:0px;
+left:0px;
+}
+.azurinfo{
+position:relative;
+padding:20px;
+margin-top:50px;
+}
+.parallelbg {
+display:block;
+margin-left:5%;
+width:90% !important;
+max-width:90%;
+height: 200px;
+transform: skew(20deg);
+background: silver;
+border-radius:15px;
+border: 5px solid cyan;
+}
+.azurinfotext {
+font-size:80px;
+top:0px;
+left:0px;
+text-shadow: -1px -1px 0 #ffffff, 1px -1px 0  #ffffff, -1px 1px 0  #ffffff, 1px 1px 0  #ffffff;
+font-weight:bold;
+color:#6666FF;
+margin-bottom:0px;
+margin-left:5%;
+}
+.azurinfop {
+font-size:20px;
+position:absolute;
+top:0px;
+left:5%;
+transform: skew(-20deg);
+width:90%;
+text-shadow: 1px 1px 1px grey;
+}
+.butnext {
+position:relative;
+padding:20px;
+}
+.nextstep {
+position:absolute;
+top:0px;
+right:0px;
+background-color:#666666;
+color:white;
+font-size:30px;
+border-radius:10px;
+text-shadow: -1px -1px 0 #000, 1px -1px 0  #000, -1px 1px 0  #000, 1px 1px 0  #000;
+}
+.arrowright {
+border:solid black;
+border-width: 0px 3px 3px 0;
+display: inline-block;
+padding:7px;
+transform: rotate (-45deg);
+-webkit-transform: rotate(-45deg);
+}
+

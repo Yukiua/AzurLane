@@ -51,8 +51,7 @@ margin-top:20px;
   height:70px;
 }
 
-.tablink:hover {
-  background-color: #777;
+.active, .tablink:hover {
   background-image: radial-gradient(darkred 1%,red 10%,#1f208b);
 }
 
@@ -64,4 +63,4 @@ margin-top:20px;
   border-radius:30px;
 }
 #PvE {background-color:#76a3ff;}
-#PvP {background-color:#FFC6D0;}
+#PvP {background-color:#76a3ff;}

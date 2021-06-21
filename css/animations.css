@@ -59,6 +59,130 @@ animation: azurlane 1s cubic-bezier(0.175, 0.885, 0.320, 1.055) 750ms both;
     opacity: 1;
   }
 }
+.bluebanner {
+-webkit-animation: bluebanner 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+animation: bluebanner 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes bluebanner{
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+@keyframes bluebanner {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+.bannertext {
+-webkit-animation: bannertext 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.75s both;
+animation: bannertext 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.75s both;
+}
+@-webkit-keyframes bannertext {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes bannertext {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.belwed {
+-webkit-animation: belwed 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+animation: belwed 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+@-webkit-keyframes belwed {
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes belwed {
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.azurinfotext {
+-webkit-animation: azurinfotext 0.75s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
+animation: azurinfotext 0.75s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
+}
+
+@-webkit-keyframes azurinfotext {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes azurinfotext {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 
 /* CSS for Contact Page */

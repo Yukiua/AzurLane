@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../css/navies.css">
   <link rel="stylesheet" type="text/css" href="../css/universal.css">
   <link rel="stylesheet" type="text/css" href="../css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../yozakura/stylesheet.css" type="text/css" charset="utf-8" />
   <script src="../jquery-3.4.1.js"></script>
   </head>
@@ -26,7 +27,7 @@
       </div>
     </div>
     <a href="eagleunion.html">Eagle Union</a>
-    <a href="royalnavy.html">Royal Navy</a>
+    <a class="currentpageship" href="royalnavy.html">Royal Navy</a>
     <a href="sakuraempire.html">Sakura Empire</a>
     <a href="ironblood.html">Iron Blood</a>
     <a href="dragonempery.html">Dragon Empery</a>
@@ -40,125 +41,157 @@
 </div>
 
 <hr>
+<h2 id="shiphead"><img src="../images/symbols/Royal_Navy-logo.png">Royal Navy<img src="../images/symbols/Royal_Navy-logo.png"></h2>
+
 <table border="1" class="total">
-  <caption id="shiphead"><img src="../images/symbols/Royal_Navy-logo.png">Royal Navy<img src="../images/symbols/Royal_Navy-logo.png"></caption>
   <tr>
-    <th class="category" rowspan="3"><img src="../images/symbols/Icon_DD.png"><br>Destroyer</th>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Glowworm.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Glowworm" target="_blank">Glowworm</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Grenville.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Grenville" target="_blank">Grenville</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Javelin.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Javelin" target="_blank">Javelin</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Matchless.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Matchless" target="_blank">Matchless</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Musketeer.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Musketeer" target="_blank">Musketeer</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Vampire.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Vampire" target="_blank">Vampire</a><div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Acasta.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Acasta" target="_blank">Acasta</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Amazon.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Amazon" target="_blank">Amazon</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Ardent.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Ardent" target="_blank">Ardent</a></div></td>
-  </tr>
-    <tr>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Echo.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Echo" target="_blank">Echo</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Fiji.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Fiji" target="_blank">Fiji</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Fortune.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Fortune" target="_blank">Fortune</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Galatea.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Galatea" target="_blank">Galatea</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Glasgow.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Glasgow" target="_blank">Glasgow</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Jamaica.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jamaica" target="_blank">Jamaica</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Jersey.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jersey" target="_blank">Jersey</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Juno.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Juno" target="_blank">Juno</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Jupiter.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jupiter" target="_blank">Jupiter</a></div></td>
-
-  </tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+      <tbody><tr>
+    <th class="category" rowspan="2"><img src="../images/symbols/Icon_DD.png"><br>Destroyer</th>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Glowworm.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Glowworm" target="_blank">Glowworm</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Grenville.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Grenville" target="_blank">Grenville</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Javelin.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Javelin" target="_blank">Javelin</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Matchless.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Matchless" target="_blank">Matchless</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Musketeer.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Musketeer" target="_blank">Musketeer</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Vampire.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Vampire" target="_blank">Vampire</a><div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Acasta.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Acasta" target="_blank">Acasta</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Amazon.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Amazon" target="_blank">Amazon</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Ardent.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Ardent" target="_blank">Ardent</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Echo.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Echo" target="_blank">Echo</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Jersey.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jersey" target="_blank">Jersey</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Juno.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Juno" target="_blank">Juno</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Jupiter.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jupiter" target="_blank">Jupiter</a></div></td>
+    <td class="ship" id="c"><img class="c" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Beagle.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Beagle" target="_blank">Beagle</a></div></td>
+    <td class="ship" id="c"><img class="c" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Bulldog.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Bulldog" target="_blank">Bulldog</a></div></td>
+    <td class="ship" id="c"><img class="c" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Comet.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Comet" target="_blank">Comet</a></div></td>
+    <td class="ship" id="c"><img class="c" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Crescent.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Cresent" target="_blank">Crescent</a></div></td>
+  </tr></tbody></table>
+</tr>
   <tr>
-    <td class="ship" id="c"><img class="c" src="../images/royalnavy/Beagle.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Beagle" target="_blank">Beagle</a></div></td>
-    <td class="ship" id="c"><img class="c" src="../images/royalnavy/Bulldog.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Bulldog" target="_blank">Bulldog</a></div></td>
-    <td class="ship" id="c"><img class="c" src="../images/royalnavy/Comet.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Comet" target="_blank">Comet</a></div></td>
-    <td class="ship" id="c"><img class="c" src="../images/royalnavy/Crescent.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Cresent" target="_blank">Crescent</a></div></td>
-  </tr>
-  <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category" rowspan="3"><img src="../images/symbols/Icon_CL.png"><br>Light Cruiser</th>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Belfast.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Belfast" target="_blank">Belfast</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Dido.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Dido" target="_blank">Dido</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Neptune.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Neptune" target="_blank">Neptune</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Sirius.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Sirius" target="_blank">Sirius</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Aurora.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Aurora" target="_blank">Aurora</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Black_Prince.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Black_Prince" target="_blank">Black Prince</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Edinburgh.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Edinburgh" target="_blank">Edinburgh</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Gloucester.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Gloucester" target="_blank">Gloucester</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Little_Bel.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Little_Bel" target="_blank">Little Bel</a></div></td>
-  </tr>
-  <tr>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Sheffield.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Sheffield" target="_blank">Sheffield</a></div></td>
-    <td class="ship" id="sr"><img class="sr"src="../images/royalnavy/Sheffield_muse.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Sheffield_(Muse)" target="_blank">Sheffield µ</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Achilles.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Achilles" target="_blank">Achilles</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Ajax.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Ajax" target="_blank">Ajax</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Arethusa.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Arethusa" target="_blank">Arethusa</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Curacoa.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Curacoa" target="_blank">Curacoa</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Curlew.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Curlew" target="_blank">Curlew</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Fiji.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Fiji" target="_blank">Fiji</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Galatea.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Galatea" target="_blank">Galatea</a></div></td>
-  </tr>
-  <tr>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Glasgow.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Glasgow" target="_blank">Glasgow</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Jamaica.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jamaica" target="_blank">Jamaica</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Newcastle.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Newcastle" target="_blank">Newcastle</a></div></td>
-    <td class="ship" id="c"><img class="c" src="../images/royalnavy/Leander.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Leander" target="_blank">Leander</a></div></td>
-  </tr>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Belfast.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Belfast" target="_blank">Belfast</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Dido.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Dido" target="_blank">Dido</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Neptune.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Neptune" target="_blank">Neptune</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Sirius.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Sirius" target="_blank">Sirius</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Aurora.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Aurora" target="_blank">Aurora</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Black_Prince.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Black_Prince" target="_blank">Black Prince</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Edinburgh.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Edinburgh" target="_blank">Edinburgh</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Gloucester.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Gloucester" target="_blank">Gloucester</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Little_Bel.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Little_Bel" target="_blank">Little Bel</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Sheffield.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Sheffield" target="_blank">Sheffield</a></div></td>
+    <td class="ship" id="sr"><img class="sr"src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Sheffield_muse.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Sheffield_(Muse)" target="_blank">Sheffield µ</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Achilles.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Achilles" target="_blank">Achilles</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Ajax.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Ajax" target="_blank">Ajax</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Arethusa.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Arethusa" target="_blank">Arethusa</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Curacoa.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Curacoa" target="_blank">Curacoa</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Curlew.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Curlew" target="_blank">Curlew</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Glasgow.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Fiji" target="_blank">Fiji</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Galatea.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Galatea" target="_blank">Galatea</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Glasgow.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Glasgow" target="_blank">Glasgow</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Jamaica.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Jamaica" target="_blank">Jamaica</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Newcastle.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Newcastle" target="_blank">Newcastle</a></div></td>
+    <td class="ship" id="c"><img class="c" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Leander.png"><br><div class="divc"><a href="https://azurlane.koumakan.jp/Leander" target="_blank">Leander</a></div></td>
+  </tr></tbody></table>
+</tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_CA.png"><br>Heavy Cruiser</th>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Exeter.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Exeter" target="_blank">Exeter</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Dorsetshire.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Dorsetshire" target="_blank">Dorsetshire</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/London.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/London" target="_blank">London</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/York.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/York" target="_blank">York</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Kent.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Kent" target="_blank">Kent</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Norfolk.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Norfolk" target="_blank">Norfolk</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Shropshire.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Shropshire" target="_blank">Shropshire</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Suffolk.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Suffolk" target="_blank">Suffolk</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Sussex.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Sussex" target="_blank">Sussex</a></div></td>
-  </tr>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Exeter.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Exeter" target="_blank">Exeter</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Dorsetshire.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Dorsetshire" target="_blank">Dorsetshire</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/London.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/London" target="_blank">London</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/York.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/York" target="_blank">York</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Kent.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Kent" target="_blank">Kent</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Norfolk.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Norfolk" target="_blank">Norfolk</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Shropshire.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Shropshire" target="_blank">Shropshire</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Suffolk.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Suffolk" target="_blank">Suffolk</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Sussex.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Sussex" target="_blank">Sussex</a></div></td>
+  </tr></tbody></table>
+<tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_BM.png"><br>Monitor</th>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Abercrombie.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Abercrombie" target="_blank">Abercrombie</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Erebus.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Erebus" target="_blank">Erebus</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Terror.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Terror" target="_blank">Terror</a></div></td>
-  </tr>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Abercrombie.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Abercrombie" target="_blank">Abercrombie</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Erebus.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Erebus" target="_blank">Erebus</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Terror.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Terror" target="_blank">Terror</a></div></td>
+  </tr></tbody></table>
+</tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+      <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_BB.png"><br>Battleship</th>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Duke_of_York.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Duke_of_York" target="_blank">Duke Of York</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/King_George_V.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/King_George_V" target="_blank">King George V</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Monarch.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Monarch" target="_blank">Monarch</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Prince_of_Wales.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Prince_of_Wales" target="_blank">Prince of Wales</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Warspite.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Warspite" target="_blank">Warspite</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Queen_Elizabeth.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Queen_Elizabeth" target="_blank">Queen Elizabeth</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Nelson.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Nelson" target="_blank">Nelson</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Rodney.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Rodney" target="_blank">Rodney</a></div></td>
-  </tr>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Duke_of_York.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Duke_of_York" target="_blank">Duke Of York</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/King_George_V.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/King_George_V" target="_blank">King George V</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Monarch.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Monarch" target="_blank">Monarch</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Prince_of_Wales.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Prince_of_Wales" target="_blank">Prince of Wales</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Warspite.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Warspite" target="_blank">Warspite</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Queen_Elizabeth.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Queen_Elizabeth" target="_blank">Queen Elizabeth</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Nelson.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Nelson" target="_blank">Nelson</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Rodney.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Rodney" target="_blank">Rodney</a></div></td>
+  </tr></tbody></table>
+</tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_BB.png"><br>Battlecruiser</th>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Hood.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Hood" target="_blank">Hood</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Renown.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Renown" target="_blank">Renown</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Little_Renown.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Little_Renown" target="_blank">Little Renown</a></div></td>
-    <td class="ship" id="r"><img class="r" src="../images/royalnavy/Repulse.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Repulse" target="_blank">Repulse</a></div></td>
-  </tr>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Hood.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Hood" target="_blank">Hood</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Renown.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Renown" target="_blank">Renown</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Little_Renown.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Little_Renown" target="_blank">Little Renown</a></div></td>
+    <td class="ship" id="r"><img class="r" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Repulse.png"><br><div class="divr"><a href="https://azurlane.koumakan.jp/Repulse" target="_blank">Repulse</a></div></td>
+  </tr></tbody></table>
+</tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_CV.png"><br>Aircraft Carrier</th>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Formidable.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Formidable" target="_blank">Formidable</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Illustrious.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Illustrious" target="_blank">Illustrious</a></div></td>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Victorious.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Victorious" target="_blank">Victorious</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Ark_Royal.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Ark_Royal" target="_blank">Ark Royal</a><div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Glorious.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Glorious" target="_blank">Glorious</a></div></td>
-  </tr>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Formidable.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Formidable" target="_blank">Formidable</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Illustrious.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Illustrious" target="_blank">Illustrious</a></div></td>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Victorious.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Victorious" target="_blank">Victorious</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Ark_Royal.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Ark_Royal" target="_blank">Ark Royal</a><div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Glorious.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Glorious" target="_blank">Glorious</a></div></td>
+  </tr></tbody></table>
+</tr>
 
   <tr>
+    <table class="subship">
+      <thead><tr></tr></thead>
+        <tbody><tr>
     <th class="category"><img src="../images/symbols/Icon_CV.png"><br>Light Aircraft Carrier</th>
-    <td class="ship" id="ssr"><img class="ssr" src="../images/royalnavy/Centaur.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Centaur" target="_blank">Centaur</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Chaser.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Chaser" target="_blank">Chaser</a></div></td>
-    <td class="ship" id="sr"><img class="sr" src="../images/royalnavy/Unicorn.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Unicorn" target="_blank">Unicorn</a></div></td>
-  </tr>
+    <td class="ship" id="ssr"><img class="ssr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Centaur.png"><br><div class="divssr"><a href="https://azurlane.koumakan.jp/Centaur" target="_blank">Centaur</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Chaser.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Chaser" target="_blank">Chaser</a></div></td>
+    <td class="ship" id="sr"><img class="sr" src="https://raw.githubusercontent.com/Yukiua/AzurLane/master/images/royalnavy/Unicorn.png"><br><div class="divsr"><a href="https://azurlane.koumakan.jp/Unicorn" target="_blank">Unicorn</a></div></td>
+  </tr></tbody></table>
+</tr>
 </table>
 
+<hr>
+<div class=mediacontainer>
+  <div class=mediaicon>
+    <a href="https://www.instagram.com/anon.oasis/" target="_blank"><img src="../images/symbols/instagram.png" class="image"></a>
+    <a href="https://twitter.com/Demblade" target="_blank"><img src="../images/symbols/twitter.png" class="image2"></a>
+    <a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank"><img src="../images/symbols/reddit.png" class="image3"></a>
+  </div>
+  <p class="endcredit">
+    All animations are provided by animista.net<br>
+    All Azur Lane resources are provided by azurlane.koumakan.jp.<br>
+    All of the website made from scratch with blood, sweat and tears of Aqil Rifaie.<br>
+  </p>
+</div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
 //Get the button
@@ -178,24 +211,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-<hr>
-<div class="sidenav">
-  <a href="https://www.instagram.com/anon.oasis/" target="_blank">
-  <div class="container">
-    <img src="../images/symbols/instagram.png" class="image">
-    <span class="tooltiptext">Instagram</span>
-  </div></a>
-
-<a href="https://twitter.com/Demblade" target="_blank">
-  <div class="container">
-    <img src="../images/symbols/twitter.png" class="image2">
-    <span class="tooltiptext2">Twitter</span>
-  </div></a>
-
-<a href="https://www.reddit.com/user/hairandmaidfetish" target="_blank">
-  <div class="container">
-    <img src="../images/symbols/reddit.png" class="image3">
-    <span class="tooltiptext3">Reddit</span>
-  </div></a>
   </body>
   </html>
